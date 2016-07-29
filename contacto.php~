@@ -1,0 +1,14 @@
+<?php 
+ $nombre = $_POST["name"]; 
+ $email = $_POST["email"]; 
+ $mensaje = $_POST["mensaje"]; 
+ $para = "juanscelyg@gmail.com"; 
+ $subject = "Email enviado por el formulario de contacto"; 
+ $encabezados = "From: $nombre <$email>"; 
+ $respuesta = mail($para, $subject, $mensaje, $encabezados); 
+ if ($respuesta == true) { 
+ echo "<a href='index.html'> El email se envio exitosamente </a>"; 
+ } else { 
+ echo "<a href='index.html'>Hubo un problema en el envío del mensaje. Lo lamentamos! </a>"; 
+ } 
+?> 

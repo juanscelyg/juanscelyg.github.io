@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Pagina Personal</title>
+  <link href="css/estilo.css" type="text/css" rel="stylesheet" />
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <style type="text/css" title="Amaya theme">
+/* Modern style for Amaya Editor Lite */
+
+/* default rules for the whole document */
+body {
+    font-size: 12pt;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+    background-color: white;
+    line-height: 1.2em;
+    margin-left: 4em;
+    margin-right: 2em;
+   }
+
+/* paragraphs */
+p  {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+   }
+
+/* headings */
+h1 {
+    font-size: 180%;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    text-align: left;
+    padding: 0;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+   }
+h2 {
+    font-size: 150%;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.1em;
+   }
+h3 {
+    font-size: 130%;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+    margin-top: 1.3em;
+    margin-bottom: 1.1em;
+   }
+h4 {
+    font-size: 110%;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0;
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+   }
+h5 {
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+    font-style: italic;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+
+/* divisions */
+div {
+    padding: 0;
+    margin-top: 0em;
+    margin-bottom: 0em;
+   }
+
+/* lists */
+ul, ol {
+    padding: 0 0 0 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+ul ul, ol ol, ul ol, ol ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+li {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+   }
+li p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+   }
+dl {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+   }
+dl dl {
+    margin-top: 0em;
+    margin-bottom: 0em;
+   }
+dt {
+    padding: 0;
+    font-weight: bold;
+    margin-top: .3em;
+    margin-bottom: .3em;
+   }
+dd {
+    padding: 0;
+    margin-top: .3em;
+    margin-left: 3em;
+    margin-bottom: .3em;
+   }
+dl p {
+    margin-top: .3em;
+    margin-bottom: .3em;
+   }
+
+/* inline */
+strong {
+    font-weight: bold;
+   }
+em {
+    font-style: italic;
+   }
+code {
+    font-family: Courier New, Courier, monospace;
+   }
+ins {
+    background-color: yellow;
+    text-decoration: underline;
+   }
+del {
+    text-decoration: line-through;
+   }
+
+/* anchors */
+a[href] {
+    color: blue;
+    text-decoration: underline;
+   }
+
+/* end */
+  </style>
+</head>
+
+<body>
+<header>
+<h1 style="text-align:center;margin-left:auto;margin-right:auto;">Juan
+Sebastián Cely Gutiérrez</h1>
+
+<p style="text-align:center;margin-left:auto;margin-right:auto;"><img
+alt="Juan Cely" src="imagenes/serio.jpg"
+style="display: block; text-align: center; margin-left: auto; margin-right: auto"
+width="724" /></p>
+
+<h3 style="text-align:center;margin-left:auto;margin-right:auto;">Estudiante de
+Ingeniería en Mecatrónica</h3>
+
+<h4 style="text-align:center;margin-left:auto;margin-right:auto;">Universidad
+Militar Nueva Granada</h4>
+</header>
+
+<p></p>
+
+<nav>
+<h2>Indice</h2>
+<ul>
+  <li><a href="#Perfil">Perfil</a></li>
+  <li><a href="#Actividades">Actividades</a></li>
+  <li><a href="#Links">Links de interes</a></li>
+  <li><a href="#Comunidades">Comunidades</a></li>
+  <li><a href="#Contacto">Contacto</a></li>
+  <p></p>
+  <p></p>
+</ul>
+</nav>
+
+<p></p>
+
+<section>
+<h3 style="text-align:justify;"><a name="Perfil" id="Perfil">Perfil</a></h3>
+
+<p style="margin-left:0em;text-align:justify;">Con el mayor de los gustos es
+bienvenido a mi perfil público, un lugar en donde usted encontrara información
+relevante sobre mi hoja de vida. En ella también encontrara trabajos
+realizados, logros alcanzados, estudios realizados y opciones de contactos.</p>
+
+<p><img alt="Una locura" src="imagenes/loco.JPG"
+style="display: block; text-align: center; margin-left: auto; margin-right: auto"
+width="556" height="459" /></p>
+
+<p style="text-align:justify;">Soy Bogotano, con 23 años de experiencia. Desde
+pequeño me gusto crear e inventar, así no se el mejor ni mucho menos bueno,
+creo que con la disciplina y el esfuerzo todo se logra. Egresado de bachiller
+del gloriosisimo INEM Francisco de Paula Santader - Kennedy, hincha del más
+veces campeón de Colombia, Millonarios. Robotista de corazón, cacharrero por
+vocación, linuxero por convicción.</p>
+
+<p style="text-align:justify;">Con una clara tendencia al orden y la
+rigurosidad. De mente abierta. Liderazgo optimo y propositivo.</p>
+
+<p style="text-align:justify;"></p>
+</section>
+
+<p></p>
+
+<section>
+<h3 style="text-align:justify;"><a name="Actividades"
+id="Actividades"></a>Actividades</h3>
+
+<p style="text-align:justify;">La mayoria de mi tiempo libre lo invierto en
+crear robots pequeños o en implementar soluciones caseras a problemas comunes.
+Actualmente nuestro proyecto de emprendimiento esta enfocado en "Impresoras
+3D", un mercado inexplorado y de gran impacto en la sociedad actual. Aunque en
+la realidad nuestro compromiso es con la tecnología y la acádemia.</p>
+
+<p style="text-align:justify;">Practico deportes en especial el fútbol y el
+baloncesto, dentro de los cuales me desempeño en torneos de mediana relevancia
+y en donde soy deportista re<a href="#L164"></a>creativo. Los domingos se
+convierten casi en culto, pues suele jugar Millonarios y me gusta verlo, sin
+embargo cuando no puedo verlo no hay problema.</p>
+
+<p></p>
+
+<p><img alt="En Tunja" src="imagenes/basket.jpg"
+style="display: block; text-align: center; margin-left: auto; margin-right: auto"
+width="600" height="450" /></p>
+
+<p></p>
+
+<p style="text-align:justify;">Aunque me agrada el cine, no suelo visitar las
+salas de cine. Prefiero comprar la pelicula - así sea de tipo Morgan - o quizás
+verla en internet. Casi no me gusta el teatro, aunque en un tiempo me dedique a
+pintar al oleo, no soy tan amante de las expresiones artisticas.</p>
+
+<p><img alt="Moliendo cafe" src="imagenes/Gráfico1.jpg"
+style="display: block; text-align: center; margin-left: auto; margin-right: auto"
+width="702" height="424" /></p>
+
+<p style="text-align:justify;">En cuestiones de música soy muy exigente, pues
+también interpreto la guitarra y esto me lleva a tener una cierta inclinación
+por lo trabajado y bien estructurado. Los gustos músicales míos primordialmente
+se rigen entre las propuestas de rock y rock pesado de los 70&#x15b; y 80's,
+sin importar el idioma; la música social y canción protesta; y todos los
+derivados de la música negra de la segunda mitad del siglo XX. Algo selecto
+yo.</p>
+
+<p style="text-align:justify;">No suelo pasar mucho tiempo en familia, esto a
+veces es muy triste y preocupante. Sin embargo trato que cada uno de los
+integrantes de ella esten orgullosos de la persona que soy.</p>
+
+<p style="text-align:justify;"></p>
+</section>
+
+<p></p>
+
+<section>
+<h3 style="text-align:justify;"><a name="Links" id="Links"></a>Links de
+interes</h3>
+
+<p style="text-align:justify;">Suelo pasar mucho tiempo en internet y en
+feisvuc (Facebook), pero en realidad me gusta más escuchar música en linea y
+para ello uso Grooveshark. Para cuestiones como de estar actualizado en
+terminos de noticias consulto los dos grandes periodicos de Colombia, ElTiempo
+y ElEspectador. Pero para cuestiones un poco más soft suelo leer post y blogs
+en Taringa, y todo lo relacionado con el mundo Linux, me fascina! </p>
+</section>
+
+<p></p>
+
+<section>
+<h3 style="text-align:justify;"><a name="Comunidades"
+id="Comunidades"></a>Comunidades</h3>
+
+<p style="text-align:justify;">Como anteriormente lo mencionaba suelo estar al
+tanto en feisvuc en donde aparezco como <a
+href="http://www.facebook.com/juanscelyg">Juan Cely</a>, pero a la vez en
+twitter como @juanscelyg. Y hago participación activa en blogs de linux como
+muylinux.com o blog.desdelinux.com usando mi cuenta de disqus como Juan
+Sebastián Cely Gutiérrez.</p>
+
+<table border="3">
+  <caption></caption>
+  <col />
+  <tbody>
+    <tr>
+      <td><h4>Nombre de la Página</h4>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="http://www.muylinux.com/">MuyLinux</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://blog.desdelinux.net/">DesdeLinux</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://grooveshark.com/#!/juanscelyg">Perfil de
+        Grooveshark</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.eltiempo.com">ElTiempo</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.elespectador.com">ElEspectador</a></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<p></p>
+
+<section>
+<h3 style="text-align:justify;"><a name="Contacto"
+id="Contacto"></a>Contacto</h3>
+
+<p style="text-align:justify;">Si deseas contactarme solo basta con escribirme
+a juanscelyg@gmail.com ó:</p>
+
+<p></p>
+
+<form method="post" action="&amp;#x201d;mailto:juanscelyg@gmail.com">
+  <b>Nombre Completo</b><br />
+  <input type="text" name="mailform_name" size="33" /><br />
+  <br />
+  <b>Dirección de correo electrónico</b><br />
+  <input type="text" name="mailform_from" size="33" /><br />
+  <br />
+  ¿Te gusto mi página? <br />
+  <input type="radio" name="Si" checked="checked" value="si" /> Si <br />
+  <input type="radio" name="No" value="no" /> No <br />
+  <input type="radio" name="maso" value="maso" /> Maso <br />
+  <b>Comentarios</b><br />
+  <textarea name="mailform_text" rows="10" cols="42"></textarea><br />
+  <br />
+
+  <input type="submit" value="Envío" /> 
+  <input type="reset" value="Cancela" name="Reset" /> </form>
+
+<p style="text-align:justify;">Estaré al pendiente de todo!</p>
+</section>
+
+<p></p>
+
+<section>
+<h2 style="text-align:center;margin-left:auto;margin-right:auto;">Saludos y que
+la fuerza los acompañe!</h2>
+
+<p style="text-align:justify;"><img alt="Que la fuerza los acompañe!"
+src="imagenes/fuerza.gif"
+style="display: block; text-align: center; margin-left: auto; margin-right: auto"
+width="500" height="500" /></p>
+</section>
+<p></p>
+<section>
+<p style="text-align:center;">Copyleft <span
+style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;">©
+</span> 2014. Diseñado por Juan Cely</p>
+</section>
+</body>
+</html>

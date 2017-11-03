@@ -10,27 +10,359 @@
 		<meta content="text/html; charset=windows-1252" http-equiv="content-type">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
-			body {
-				background: lightgray;    
-			}
-			.conteiner{
-				margin: auto
-				max-width: 600px;
-				border: 3px solid grey;
-				background-color: #ffffff;
-				color: #000000;
-			}
+		* {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		}	
+			
+		.big_box{
+    	width:auto;
+    	max-width:1000px;
+    	min-width:1000px;
+    	height: auto !important;
+      height: 100%;
+    	margin:0 auto;
+		border: 1px solid grey;
+		background-color: white;
+		color: black;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.8);
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 2%;
+		}		
+		
+/* Global settings for hyperlinks and hr */
+a:link { color: #004bff; text-decoration: none; }
+a:visited { color: #0064ff; text-decoration: none; }
+a:hover { color: #0096ff; text-decoration: none; }
+a:active { color: #0096ff; text-decoration: none; }
+hr.smooth
+{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+}		
+	
+a[href *="twitter.com"] { 
+	padding: 5px 0px 5px 20px;
+	background: transparent url(icons/twitter.png) no-repeat center left;
+}
+
+a[href *="scholar.google.com"] {
+	padding: 5px 0px 5px 20px;
+	background: transparent url(icons/google_scholar.png) no-repeat center left;
+}
+
+a[href *="github.com"] {
+	padding: 5px 0px 5px 20px;
+	background: transparent url(icons/github.png) no-repeat center left;
+}	
+
+a[href *="orcid.org"] {
+	padding: 5px 0px 5px 20px;
+	background: transparent url(icons/orcid.png) no-repeat center left;
+}	
+
+a[href *="youtube.com/watch?"], { 
+	padding: 5px 0px 5px 20px;
+	background: transparent url(icons/youtube.png) no-repeat center left;
+}
+	
+a[href$='.pdf'] { 
+	padding: 5px 0px 5px 20px;
+	background: transparent url(icons/pdf.png) no-repeat center left;
+}	
+
+a[href ^="mailto:"] {
+	padding: 5px 0px 5px 20px;
+    background: transparent url(icons/mail.png) no-repeat center left;
+}
+		
+		.section
+		{
+		margin: 15px 5px 5px 10px;
+		line-height: 150%;
+		-webkit-font-smoothing: antialiased; 
+		}
+
+		/* Logo section. */
+		.logos { margin: 1.5em 0; text-align: center; margin-top:5px; margin-bottom:10px; }
+		.logos img { vertical-align:top; margin:0 1.25em; border:0; }
+
+		/* Page header. */
+		.head { text-align: left; margin: 0.5em 0; padding: 0.5em 2em; background-color:#f1f1f1; text-shadow: 1px 1px 3px #cccccc; }
+		.head { color: #111; }
+		.head h1 { font-size: 24pt; line-height:27pt; margin: 10px 0; }
+		.head h1 a { text-decoration:none; }
+		.authors { font-size: 12pt; margin: 0 0 1em 0; }
+		.affiliations { font-size: 11pt; margin: -0.5em 0 10pt 0; }
+		.venue { font-style:italic; font-size: 12pt; margin: 1em 0 1em 0; }
+		.publist {width: 0 auto; margin: 0; margin-top: 10px; margin-bottom: 10px; border: 1px solid #8a887d; padding: 5px; background-color: #f6f3e5;}
+		
+		#container {
+		margin: 0 auto;
+		width: 98%;  /* Ancho del contenedor */
+		margin-bottom: 2%;
+    	height: auto !important;
+    	height: 100%;
+		}
+		
+		#container input {
+		height: 2.5em;
+		visibility: hidden;
+		}
+		
+		#container label {
+		background: #f9f9f9;  /* Fondo de las pestañas */
+		border-radius: .25em .25em 0 0;
+		color: #888;  /* Color del texto de las pestañas */
+		cursor: pointer;
+		display: block;
+		float: left;
+		font-size: 1em;  /* Tamaño del texto de las pestañas */
+		height: 2.5em;
+		line-height: 2.5em;
+		margin-right: .25em;
+		padding: 0 1.5em;
+		text-align: center;
+		}
+		
+		#container input:hover + label {
+		background: #ddd;  /* Fondo de las pestañas al pasar el cursor por encima */
+		color: #666;  /* Color del texto de las pestañas al pasar el cursor por encima */
+		}
+		
+		#container input:checked + label {
+		background: #f1f1f1;  /* Fondo de las pestañas al presionar */
+		color: #444; /* Color de las pestañas al presionar */
+		position: relative;
+		z-index: 6;
+		/*
+		-webkit-transition: .1s;
+		-moz-transition: .1s;
+		-o-transition: .1s;
+		-ms-transition: .1s;
+		*/
+		}
+		
+		#content {
+		background: #f1f1f1;  /* Fondo del contenido */
+		border-radius: 0 .25em .25em .25em;
+		min-height: 20em;  /* Alto del contenido */
+		position: relative;
+		width: 100%;
+		z-index: 5;
+		height: auto !important;
+    	height: 100%;
+		}
+		
+		#content div {
+		opacity: 0;
+		padding: 1.5em;
+		position: absolute;
+		z-index: -100;
+		/*
+		transition: all linear 0.1s;
+		*/
+		}
+		
+#content-2  {
+			height: auto !important;
+    	height: 100%;
+}
+	
+		#container input#tab-1:checked ~ #content #content-1,
+		#container input#tab-2:checked ~ #content #content-2,
+		#container input#tab-3:checked ~ #content #content-3,
+		#container input#tab-4:checked ~ #content #content-4,
+		#container input#tab-5:checked ~ #content #content-5,
+		#container input#tab-6:checked ~ #content #content-6{
+		opacity: 1;
+		z-index: 100;
+		height: auto !important;
+    	height: 100%;
+		}
+		
+		input.visible {
+		visibility: visible !important;
+		}							
 		</style> 
 	</head>
 	<body>
-		<div class="conteiner">
-		<div style="text-align: center;">      
-		<h1>Juan Sebasti&aacute;n Cely Guti&eacute;rrez</h1>
-		<h2>Mechatronic Engineer</h2>
-		<h2>M.Sc. in Automation and Robotics.</h2>
-		<img src="imagenes/jscg_reducida.JPG" width="208" height="294" alt="Juan S. Cely G.">
-		<p>Research Assistant at Center of Automation and Robotics ( CAR UPM-CSIC)</p>
-		<a href="http://www.car.upm-csic.es/authors/cap-juan-sebastian-cely-gutierrez/" >Link CAR Website.</a></div>   
-		</div>	
+		<div class="big_box">
+			<!--HEAD-->
+	   	<div class="section head">
+				<a href="https://www.car.upm-csic.es/" target="_blank"><img src="imagenes/CAR_logo.png" height="100" align="right" style="margin-left:0px;margin-right:0px;"/></a>
+				<h1>Juan Sebasti&aacute;n Cely Guti&eacute;rrez</h1>
+				<a href="mailto:juanscelyg@gmail.com" >juanscelyg@gmail.com</a><br>
+				Center for Automation and Robotics CAR UPM-CSIC<br>
+				C/ Jos&eacute; Guti&eacute;rrez Abascal 2, Madrid, Spain, 28006		
+			</div>	
+			<!--TABS-->
+			<div id="container">
+				<input id="tab-1" type="radio" name="tab-group" checked="checked" />
+				<label for="tab-1">About</label>
+				<input id="tab-2" type="radio" name="tab-group" />
+				<label for="tab-2">Research</label>
+				<input id="tab-3" type="radio" name="tab-group" />
+				<label for="tab-3">Code</label>
+				<input id="tab-4" type="radio" name="tab-group" />
+				<label for="tab-4">Education</label>
+				<input id="tab-5" type="radio" name="tab-group" />
+				<label for="tab-5">Others</label>
+				<input id="tab-6" type="radio" name="tab-group" />
+				<label for="tab-6">Personal</label>	    	
+				<!--CONTENT-->
+				<div id="content">
+					<!--Tab 1 About-->
+					<div id="content-1">
+	    					<img src="imagenes/jscg_reducida.JPG" width="170" align="left" alt="Juan S. Cely G." style="margin-left:5px;margin-right:20px; border:1px solid #ddd"/>
+	    					<p align="left/center/right/justify">
+							I am a PhD student at Universidad Politecnica de Madrid, working with Prof. Roque Saltaren in the Robots & Intelligent Machines Group. My research interests lie Geometric Algebra for robots navigation, dynamics of Underwater robots and Microgravity robots.<br /><br />
+							I completed a Master degree in Automation and Robotic at the Univerisdad Politenica de Madrid and a Bachelors degree at the Universidad Militar Nueva Granada.<br /><br />
+							Actually, i'm research assistant at Center for Automation and Robotics, where working with underwater robots and robots for microgravity.<br /><br />
+							</p>
+													
+							<center>
+								<a href="misc/CV_Juan_Cely_En.pdf" target="_blank">CV</a>
+								&nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=bQY0Wa0AAAAJ&hl=en" target="_blank">Google Scholar</a>
+								&nbsp;/&nbsp; <a href="http://orcid.org/0000-0003-3348-0533" target="_blank">ORCid</a>
+								&nbsp;/&nbsp; <a href="https://github.com/juanscelyg" target="_blank">Github</a>
+								&nbsp;/&nbsp; <a href="https://twitter.com/juanscelyg" target="_blank">Twitter</a>
+							</center>						
+					</div>
+					<!--Tab 2 Research-->
+					<div id="content-2">
+
+								<a href="https://scholar.google.com/citations?user=bQY0Wa0AAAAJ&hl=en" target="_blank">Google Scholar</a>
+								&nbsp;/&nbsp; <a href="http://orcid.org/0000-0003-3348-0533" target="_blank">ORCid</a>
+
+					<table>
+					<tr>
+					<td>
+					<!--Algo-->					
+					</td>
+					</tr>
+					<tr>
+					<td>
+					<br /><br /> 
+					<h2><u>Publications</u></h2>  
+					<br />					
+					<h3>2015</h3>
+					<table>				
+					<tr>
+					<td>								
+					<a href="https://www.scientific.net/AMM.713-715.785" target="_blank">
+					<img src="imagenes/plataforma.jpg" width="150" align="left" style="margin-left:0px;margin-right:20px; border:1px solid #ddd" />
+					</a>
+					</td>
+					<td>
+					<a href="https://www.scientific.net/AMM.713-715.785" target="_blank">
+					<b><i>Mechanical Design of a Self-Balancing Platform for Transporting Purposes</i></b><br />
+					</a>
+					Mauricio Mauledoux, <u>Juan S. Cely G.</u>, Oscar F. Aviles S.<br />
+					Applied Mechanics and Materials (<b>AMM</b>) Vols. 713-715, pp. 785-788, 2015.<br />
+					</td>
+					</tr>
+					</table>					
+					</td>
+					</tr>
+					<tr>
+					<td>					
+					<br /><br /> 
+					<h2><u>Projects</u></h2>  
+					<br />					
+					<h3>2017</h3>
+					<table>
+					<tr>
+					<td><img src="imagenes/internal_schema.PNG" width="150" align="left" style="margin-left:0px;margin-right:20px; border:1px solid #ddd" /></td>
+					<td>
+					<a href="http://repository.unimilitar.edu.co/handle/10654/13810" target="_blank">
+					<b><i>Diseño e Implementacion de la arquitectura interna de un robot submarino modular para tareas de manipulacion bajo el agua</i></b><br />
+					</a>
+					<u>Juan S. Cely G.</u><br />
+					Universidad Politenica de Madrid (<b>Open Access UPM</b>) 2017.<br />
+					</td>
+					</tr>
+					</table>					
+					<h3>2015</h3>						
+					<table>
+					<tr>
+					<td>								<a href="http://repository.unimilitar.edu.co/handle/10654/13810" target="_blank">
+					<img src="imagenes/sim_grado.PNG" width="150" align="left" style="margin-left:0px;margin-right:20px; border:1px solid #ddd" />
+					</a>
+					</td>
+					<td>
+					<a href="http://repository.unimilitar.edu.co/handle/10654/13810" target="_blank">
+					<b><i>Diseño y Simulación de una plataforma móvil auto-balanceada de dos ruedas para el transporte de una persona promedio</i></b><br />
+					</a>
+					<u>Juan S. Cely G.</u><br />
+					Universidad Militar Nueva Granada (<b>UMNG Repository</b>) 2015.<br />
+					<a href="http://repository.unimilitar.edu.co/bitstream/10654/13810/2/diseno%20y%20simulacion%20de%20una%20plataforma%20movil%20autobalanceada%20de%20dos%20ruedas%20para%20el%20transporte%20de%20una%20persona%20promedio.pdf" target="_blank">PDF</a>					
+					</td>
+					</tr>
+					</table>				
+					</td>
+					</tr>
+					<tr>
+					<td>
+					<!--Patentes-->
+					</td>
+					</tr>
+					</table>
+					<!--Fin tabla-->
+					
+					</div>
+					<!--Tab 3 Code-->
+					<div id="content-3">
+						<h2>Code</h2>
+							<br />
+	    					<ul>
+	      					<li><a href="https://github.com/juanscelyg/GRMI_underwater_drone" target="_blank">GRMI_underwater_drone</a>: A modular, fully and light library for connecting GRMI's robots to internet using <b>AWS</b> (Amazon Web Service), typed in Python and Arduino.</li>
+	    					</ul>        
+					</div>
+					<!--Tab 4 Education-->
+					<div id="content-4">
+						<h2>Education</h2>
+						<br />
+						<ul>
+							<li>
+								2016&ndash;2017:<br />
+								<b>Master of Science in Automation and Robotics</b>, <a href="https://www.car.upm-csic.es/">CAR UPM-CSIC</a>, <a href="http://www.upm.es/">Universidad Politecnica de Madrid</a>, Spain<br />
+								Master thesis:<i> "Design and Implementation of the Internal architecture of an modular robot for underwater grasping tasks."</i><br />
+								Courses:<i> Dynamic and Control of Robots, Robots Kinematics, Design of Robots, Guided and Navigation of Robots.</i><br /><br />
+							</li>
+							<li>
+								2008&ndash;2015:<br />
+								<b>Bachelor of Mechatronics Engineering</b>, <a href="http://scienti.colciencias.gov.co:8080/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000001843">Davinci Research Group</a>, <a href="http://www.umng.edu.co/">Universidad Militar Nueva Granada</a>, Colombia<br />
+								Thesis:<i> "Design and Simulation of a self balancing mobile platform for the transport of an average person."</i><br />
+								Courses:<i> Mechatronics Systems Models, Linear Control, Robotics, Advanced Topics of Control, Mechatronic Design, Artificial Intelligence.</i><br /><br />
+							</li>							
+						</ul>						        
+					</div>
+					<!--Tab 5 Others-->
+					<div id="content-5">
+						Contenido 5	        
+					</div>
+					<!--Tab 6 Personal-->
+					<div id="content-6">
+						Void :(	        
+					</div>
+											
+				</div>
+			</div>
+
+		
+		</div>   
 	</body>
 </html>

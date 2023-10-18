@@ -1,5 +1,5 @@
-# Pagina en contrucción
+# Pagina en contrucciÃ³n
 
-A medida que se vayan adquiriendo habilidades y demás destrezas en el manejo de html y demás.
+A medida que se vayan adquiriendo habilidades y demÃ¡s destrezas en el manejo de html y demÃ¡s.
 
 Saludos!
